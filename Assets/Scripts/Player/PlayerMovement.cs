@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float moveSpeed = 75f;    // Velocidad de movimiento
-    float jumpForce = 10f;   // Fuerza del salto
-    private bool isGrounded;        // Variable para verificar si el personaje est? en el suelo
+    float moveSpeed = 100f;
+    float jumpForce = 10f;
+    private bool isGrounded;
     private Rigidbody rb;
 
     private void Start()
@@ -16,10 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // Verificar si el personaje est? en el suelo
         isGrounded = Physics.Raycast(transform.position, Vector3.down, 0.6f);
 
-        // Movimiento horizontal
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 

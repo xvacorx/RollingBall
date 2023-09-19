@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
     public Transform respawnPoint; // Referencia al punto de reaparición.
     private Rigidbody playerRigidbody; // Referencia al Rigidbody del jugador.
 
-    public GameOverScreen GameOver;
-
     private void Start()
     {
         // Establece la posición inicial del jugador en el punto de reaparición.

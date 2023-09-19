@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    float rotationSpeed = 50.0f; // Velocidad de rotación en grados por segundo
+    float rotationSpeed = 50.0f;
 
+    AudioSource coin;
+
+    private void Start()
+    {
+        coin = GetComponent<AudioSource>();
+    }
     void Update()
     {
         transform.Rotate(Vector3.left * rotationSpeed * Time.deltaTime);
@@ -16,8 +22,12 @@ public class Coin : MonoBehaviour
         {
             TextManager textManager = FindObjectOfType<TextManager>();
 
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+
+            coin.Play();
+
             textManager.AddScore(10);
-            Destroy(gameObject);
+            Destroy(gameObject,1f);
         }
     }
 }
