@@ -51,7 +51,7 @@ Canvas:
   m_GameObject: {fileID: 3519723569634994210}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 3519723569991464547}
+  score: 0
   lifeText: {fileID: 3519723569814342580}
 --- !u!1 &3519723569814342587
 GameObject:
