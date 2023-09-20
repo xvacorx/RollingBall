@@ -6,28 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class RealFinish : MonoBehaviour
 {
-    TextManager textManager;
+    public string objetoAEcontarTag = "Collectible";
+    public int cantidadObjetosNecesarios1 = 5;  // Cantidad de objetos para la escena 1
+    public int cantidadObjetosNecesarios2 = 10; // Cantidad de objetos para la escena 2
+    public string escena1;
+    public string escena2;
+    public string escenaFinal;
 
-    string VictoriaBronze = "VictoriaB";
-    string VictoriaSilver = "VictoriaS";
-    string VictoriaGold = "VictoriaG";
-
-    private void OnCollisionEnter(Collision collision)
+    void Start()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        int cantidadEncontrada = GameObject.FindGameObjectsWithTag(objetoAEcontarTag).Length;
+
+        if (cantidadEncontrada <= cantidadObjetosNecesarios1)
         {
-            if (textManager.score >= 250)
-            {
-                SceneManager.LoadScene(VictoriaGold);
-            }
-            if (textManager.score >= 150)
-            {
-                SceneManager.LoadScene(VictoriaSilver);
-            }
-            else
-            {
-                SceneManager.LoadScene(VictoriaBronze);
-            }
+            SceneManager.LoadScene(escena1);
+        }
+        else if (cantidadEncontrada <= cantidadObjetosNecesarios2)
+        {
+            SceneManager.LoadScene(escena2);
+        }
+        else
+        {
+            SceneManager.LoadScene(escenaFinal);
         }
     }
 }
