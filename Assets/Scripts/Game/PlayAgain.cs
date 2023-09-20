@@ -2,24 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class PlayAgain : MonoBehaviour
 {
-    private Button boton;
+    // Publica una variable para almacenar el nombre de la escena que deseas cargar
+    public string nombreDeLaEscenaARecargar;
 
-    private void Start()
+    // Este método se llama cuando el botón es presionado
+    public void CargarLaEscena()
     {
-        // Obtener la referencia al componente Button del botón
-        boton = GetComponent<Button>();
-
-        // Agregar un listener al evento de clic del botón
-        boton.onClick.AddListener(CargarEscenaTutorial);
-    }
-
-    private void CargarEscenaTutorial()
-    {
-        // Cargar la escena "Tutorial" cuando se hace clic en el botón
-        SceneManager.LoadScene("Tutorial");
+        // Cargar la escena utilizando el nombre proporcionado
+        SceneManager.LoadScene(nombreDeLaEscenaARecargar);
     }
 }
