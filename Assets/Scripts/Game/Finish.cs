@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField] string nombreDeEscena = "Level 1";
+    string nombreDeEscena = "Level 1";
 
     private void OnCollisionEnter(Collision collision)
     {

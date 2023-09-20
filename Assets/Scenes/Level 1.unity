@@ -2253,7 +2253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720985693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 61.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2920,8 +2920,12 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.82
+      value: 5.8200006
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2929,11 +2933,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 4.4999995
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2941,15 +2945,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4354878640781689890, guid: f5e3165e581a6dd419620b5221fc1c94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3927,7 +3931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514308851}
   m_LocalRotation: {x: 0.46174863, y: -0, z: -0, w: 0.8870109}
-  m_LocalPosition: {x: 0, y: 8, z: -7}
+  m_LocalPosition: {x: 61.8, y: 8, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5262,7 +5266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f05af891a3713c4db975e8e41a2af99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoAEcontarTag: Objeto
   cantidadObjetosNecesarios1: 5
   cantidadObjetosNecesarios2: 10
   escena1: VictoriaG
