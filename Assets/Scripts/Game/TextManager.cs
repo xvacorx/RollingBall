@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class TextManager : MonoBehaviour
 {
+    
     public Text scoreText; // Referencia al componente Text que mostrará el puntaje.
-    private int score = 0; // Puntaje actual.
+    public int score = 0; // Puntaje actual.
     public Text lifeText;
     private int life = 3;
 
